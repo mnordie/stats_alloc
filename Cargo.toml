@@ -16,3 +16,9 @@ exclude = [
     "rustfmt.toml",
     "tests/**/*",
 ]
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "doc_cfg"]
